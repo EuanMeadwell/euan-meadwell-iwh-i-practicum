@@ -21,7 +21,7 @@ const headers = {
 // * Code for Route 1 goes here
 
 app.get('/', async (req, res) => {
-    const url = 'https://api.hubapi.com/crm/v3/objects/${OBJECT_ID} ?properties=name,species,age';
+    const url = `https://api.hubapi.com/crm/v3/objects/${OBJECT_ID}?properties=name,species,age`;
     try {
         const response = await
         axios.get(url, { headers });
